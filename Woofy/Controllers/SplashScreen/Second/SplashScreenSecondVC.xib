@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashScreenSecondVC" customModule="Woofy" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="YhS-C8-Y46" id="lpQ-CO-I0S"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I4n-OF-fjG" userLabel="ConteinerView">
+                    <rect key="frame" x="0.0" y="47" width="375" height="731"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Бесплатная доставка" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCf-05-khV">
+                            <rect key="frame" x="31" y="38" width="282" height="101"/>
+                            <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="36"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashScreen02" translatesAutoresizingMaskIntoConstraints="NO" id="1WZ-W4-cup">
+                            <rect key="frame" x="0.0" y="206" width="375" height="305"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="305" id="GrF-C0-TqP"/>
+                                <constraint firstAttribute="width" constant="375" id="WVF-DS-tsy"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="По Минску и в районы до 20 км при заказе от 35 руб. Работаем без выходных." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8J-8v-nRh">
+                            <rect key="frame" x="31" y="528" width="312" height="39.333333333333371"/>
+                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                            <color key="textColor" red="0.53725490200000003" green="0.53725490200000003" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PageIndicator02" translatesAutoresizingMaskIntoConstraints="NO" id="Q3q-cq-WML">
+                            <rect key="frame" x="72" y="612.33333333333337" width="229" height="8"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YhS-C8-Y46">
+                            <rect key="frame" x="31" y="670.33333333333337" width="312" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="f7D-6Y-9CF"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="Мне подходит">
+                                <fontDescription key="titleFontDescription" name="Poppins-Bold" family="Poppins" pointSize="16"/>
+                                <color key="baseBackgroundColor" red="0.99215686270000003" green="0.57647058819999997" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="buttonDidTap:" destination="-1" eventType="touchUpInside" id="e4D-82-Lq6"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="1WZ-W4-cup" firstAttribute="top" secondItem="rCf-05-khV" secondAttribute="bottom" constant="67" id="C83-9j-Caf"/>
+                        <constraint firstItem="Y8J-8v-nRh" firstAttribute="top" secondItem="1WZ-W4-cup" secondAttribute="bottom" constant="17" id="E1P-tk-HWF"/>
+                        <constraint firstItem="1WZ-W4-cup" firstAttribute="leading" secondItem="I4n-OF-fjG" secondAttribute="leading" id="FtO-L5-eJg"/>
+                        <constraint firstItem="rCf-05-khV" firstAttribute="leading" secondItem="I4n-OF-fjG" secondAttribute="leading" constant="31" id="HBU-xo-LCx"/>
+                        <constraint firstAttribute="trailing" secondItem="Q3q-cq-WML" secondAttribute="trailing" constant="74" id="PQz-fQ-rmp"/>
+                        <constraint firstItem="Q3q-cq-WML" firstAttribute="leading" secondItem="I4n-OF-fjG" secondAttribute="leading" constant="72" id="QAo-aZ-lfX"/>
+                        <constraint firstAttribute="trailing" secondItem="rCf-05-khV" secondAttribute="trailing" constant="62" id="Vda-Y7-hKE"/>
+                        <constraint firstItem="rCf-05-khV" firstAttribute="top" secondItem="I4n-OF-fjG" secondAttribute="top" constant="38" id="Vyy-g5-YGb"/>
+                        <constraint firstItem="YhS-C8-Y46" firstAttribute="top" secondItem="Q3q-cq-WML" secondAttribute="bottom" constant="50" id="XQM-tA-4YY"/>
+                        <constraint firstItem="Q3q-cq-WML" firstAttribute="top" secondItem="Y8J-8v-nRh" secondAttribute="bottom" constant="45" id="bm9-I4-kML"/>
+                        <constraint firstItem="YhS-C8-Y46" firstAttribute="leading" secondItem="I4n-OF-fjG" secondAttribute="leading" constant="31" id="cD2-DH-wkP"/>
+                        <constraint firstAttribute="trailing" secondItem="Y8J-8v-nRh" secondAttribute="trailing" constant="32" id="e3R-4C-TrX"/>
+                        <constraint firstAttribute="trailing" secondItem="YhS-C8-Y46" secondAttribute="trailing" constant="32" id="jkU-wr-okV"/>
+                        <constraint firstAttribute="trailing" secondItem="1WZ-W4-cup" secondAttribute="trailing" id="xc7-Nh-SH9"/>
+                        <constraint firstItem="Y8J-8v-nRh" firstAttribute="leading" secondItem="I4n-OF-fjG" secondAttribute="leading" constant="31" id="zDZ-zO-Ty5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="I4n-OF-fjG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4qE-18-21L"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="I4n-OF-fjG" secondAttribute="bottom" id="Drd-xp-8tp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="I4n-OF-fjG" secondAttribute="trailing" id="MKH-xV-E2g"/>
+                <constraint firstItem="I4n-OF-fjG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="SY5-Y4-hwV"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <point key="canvasLocation" x="56" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="PageIndicator02" width="44" height="8"/>
+        <image name="SplashScreen02" width="319" height="319"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
